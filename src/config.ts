@@ -12,7 +12,7 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
 	title: "AcoFork Blog",
 	description:
-		"分享网络技术、服务器部署、内网穿透、静态网站搭建、CDN优化、容器化部署等技术教程与实践经验的个人技术博客，专注于云原生、无服务器架构和前后端开发，作者为afoim/二叉树树",
+		"分享网络技术、服务器部署、内网穿透、静态网站搭建、CDN优化、容器化部署等技术教程与实践经验的个人技术博客，专注于云原生、无服务器架构和前后端开发，作者为李帅站长",
 
 	keywords: [],
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
@@ -35,7 +35,7 @@ export const siteConfig: SiteConfig = {
 	},
 	background: {
 		enable: true, // Enable background image
-		src: "https://eopageapi.2x.nz/pic?img=h", // Background image URL (supports HTTPS)
+		src: "https://eo-picsv.jianyuan.eu.org/h", // Background image URL (supports HTTPS)
 		position: "center", // Background position: 'top', 'center', 'bottom'
 		size: "cover", // Background size: 'cover', 'contain', 'auto'
 		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
@@ -49,7 +49,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave this array empty to use the default favicon
 		{
-			src: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0", // Path of the favicon, relative to the /public directory
+			src: "https://q2.qlogo.cn/headimg_dl?dst_uin=1160299306&spec=0", // Path of the favicon, relative to the /public directory
 			//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
 			//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
 		},
@@ -62,42 +62,42 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
-			name: "友链",
-			url: "/friends/", // Internal links should not include the base path, as it is automatically added
+			name: "主页",
+			url: "https://taiyanglee.eu.org/", // Internal links should not include the base path, as it is automatically added
 			external: false, // Show an external link icon and will open in a new tab
 		},
 		{
-			name: "赞助",
-			url: "/donate/", // Internal links should not include the base path, as it is automatically added
+			name: "短信轰炸",
+			url: "https://taiyanglee.eu.org/smsboom/", // Internal links should not include the base path, as it is automatically added
 			external: false, // Show an external link icon and will open in a new tab
 		},
 		{
 			name: "统计",
-			url: "https://umami.2x.nz/share/ZyDjOrmjaBTlmGtd", // Internal links should not include the base path, as it is automatically added
+			url: "https://cloud.umami.is/share/tWMMUocQfILzEeg4", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
 			name: "状态",
-			url: "https://ss.2x.nz/", // Internal links should not include the base path, as it is automatically added
+			url: "https://jk.jianyuan.eu.org/", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "二叉树树",
+	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=1160299306&spec=0", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "李帅站长",
 	bio: "你往小腹下探探有棍你就倒倒有豆你就点点比网站好玩🥰",
 	links: [
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/325903362",
+			url: "https://space.bilibili.com/1857798048",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/afoim",
+			url: "https://github.com/sljfcnjdfh",
 		},
 	],
 };
@@ -110,15 +110,16 @@ export const licenseConfig: LicenseConfig = {
 
 export const imageFallbackConfig: ImageFallbackConfig = {
 	enable: true,
-	originalDomain: "eo-r2.2x.nz",
-	fallbackDomain: "pub-d433ca7edaa74994b3d7c40a7fd7d9ac.r2.dev",
+	originalDomain: "eo-picsv.jianyuan.eu.org",
+	fallbackDomain: "9d58109d7ffef47d28bbef6e57a1415d.r2.cloudflarestorage.com",
 };
 
 export const umamiConfig: UmamiConfig = {
 	enable: true,
-	baseUrl: "https://umami.2x.nz",
-	shareId: "ZyDjOrmjaBTlmGtd",
+	baseUrl: "https://cloud.umami.is",
+	shareId: "tWMMUocQfILzEeg4",
 	timezone: "Asia/Shanghai",
+	
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
