@@ -64,12 +64,12 @@ export const navBarConfig: NavBarConfig = {
 		{
 			name: "主页",
 			url: "https://taiyanglee.eu.org/", // Internal links should not include the base path, as it is automatically added
-			external: false, // Show an external link icon and will open in a new tab
+			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
 			name: "短信轰炸",
 			url: "https://taiyanglee.eu.org/smsboom/", // Internal links should not include the base path, as it is automatically added
-			external: false, // Show an external link icon and will open in a new tab
+			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
 			name: "统计",
