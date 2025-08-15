@@ -10,7 +10,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "AcoFork Blog",
+	title: "Lishuai Blog",
 	description:
 		"分享网络技术、服务器部署、内网穿透、静态网站搭建、CDN优化、容器化部署等技术教程与实践经验的个人技术博客，专注于云原生、无服务器架构和前后端开发，作者为李帅站长",
 
@@ -82,7 +82,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=1160299306&spec=0", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "李帅站长",
-	bio: "你往小腹下探探有棍你就倒倒有豆你就点点比网站好玩🥰",
+	bio: "白崇义我的魔改博客不开源哦，它本身长这样的 https://fuwari.vercel.app/ 不过被我加了许多功能",
 	links: [
 		{
 			name: "Bilibli",
