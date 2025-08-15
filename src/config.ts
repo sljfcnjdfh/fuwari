@@ -73,7 +73,7 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "统计",
-			url: "https://cloud.umami.is/share/tWMMUocQfILzEeg4", // Internal links should not include the base path, as it is automatically added
+			url: "https://eu.umami.is/share/tWMMUocQfILzEeg4/fw.jianyuan.eu.org", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
@@ -111,7 +111,7 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 
 export const umamiConfig: UmamiConfig = {
 	enable: true,
-	baseUrl: "https://cloud.umami.is",
+	baseUrl: "https://eu.umami.is",
 	shareId: "tWMMUocQfILzEeg4",
 	timezone: "Asia/Shanghai",
 	
