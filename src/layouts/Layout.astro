@@ -269,7 +269,7 @@ var _hmt = _hmt || [];
 
 		<!-- increase the page height during page transition to prevent the scrolling animation from jumping -->
 		<div id="page-height-extend" class="hidden h-[300vh]"></div>
-		
+
 		<!-- 域名检测脚本 -->
 		<script is:inline define:vars={{officialSites: ["https://fx.jianyuan.eu.org"]}}>
 			// 域名检测功能
@@ -318,32 +318,17 @@ var _hmt = _hmt || [];
 					// 如果检测过程中出现错误，静默处理，不影响正常访问
 					console.warn('域名检测失败:', error);
 				}
-        		// 域名检测通过后加载播放器
-        		loadPlayer();
-    		}
-			// 播放器加载功能
-    		function loadPlayer() {
-        		if (typeof document !== 'undefined' && !document.getElementById('myhk')) {
-            		var script = document.createElement('script');
-            		script.id = 'myhk';
-            		script.type = 'text/javascript';
-            		script.src = 'https://myhkw.cn/api/player/1754378861189';
-            		script.setAttribute('key', '1754378861189');
-            		script.setAttribute('m', '1');
-            		document.body.appendChild(script);
-        		}
-    		}
-
+			}
+			
 			// 页面加载完成后执行域名检测
-			if (typeof document !== 'undefined') {
-				if (document.readyState === 'loading') {
-					document.addEventListener('DOMContentLoaded', checkDomain);
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', checkDomain);
 			} else {
 				checkDomain();
-        	}
-    	}
-})();
+			}
 		</script>
+	<script type="text/javascript" id="myhk" src="https://myhkw.cn/api/player/1754378861189" key="1754378861189" m="1"></script>
+	</body>
 </html>
 
 <style is:global define:vars={{
