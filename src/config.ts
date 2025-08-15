@@ -62,17 +62,17 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
-			name: "主页",
+			name: "个人主页",
 			url: "https://taiyanglee.eu.org/", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
 			name: "短信轰炸",
-			url: "https://taiyanglee.eu.org/smsboom/", // Internal links should not include the base path, as it is automatically added
+			url: "https://taiyanglee.eu.org/pct/zpzs/zpzs/20/index.html", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
-			name: "统计",
+			name: "数据统计",
 			url: "https://eu.umami.is/share/tWMMUocQfILzEeg4/fx.jianyuan.eu.org", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
