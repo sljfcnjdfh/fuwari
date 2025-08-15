@@ -1,11 +1,11 @@
 ---
 title: "加群向导"
-image: https://eopageapi.2x.nz/pic?img=h
-published: 2025-05-24
+image: https://eo-picsv.jianyuan.eu.org/h
+published: 2025-08-15
 pinned: true
 category: '置顶'
 tags: [联系]
-description: 关于如何联系二叉树树~
+description: 关于如何联系李帅站长~
 ---
 
-# 暂无
+# 暂无 我的大脑正在协商这件事
