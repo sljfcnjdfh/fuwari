@@ -82,7 +82,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=1160299306&spec=0", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "李帅站长",
-	bio: "白崇义我的魔改博客不开源哦，它本身长这样的 https://fuwari.vercel.app/ 不过被我加了许多功能",
+	bio: "白崇义我的魔改博客不开源哦，它本身长这样的https://fuwari.vercel.app不过被我加了许多功能",
 	links: [
 		{
 			name: "Bilibli",
