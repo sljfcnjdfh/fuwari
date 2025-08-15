@@ -73,7 +73,7 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "统计",
-			url: "https://eu.umami.is/share/tWMMUocQfILzEeg4/fw.jianyuan.eu.org", // Internal links should not include the base path, as it is automatically added
+			url: "https://eu.umami.is/share/tWMMUocQfILzEeg4/fx.jianyuan.eu.org", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
