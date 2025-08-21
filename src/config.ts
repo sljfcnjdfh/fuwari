@@ -90,9 +90,14 @@ export const profileConfig: ProfileConfig = {
 	bio: "白崇义我的魔改博客不开源哦，它本身长这样的https://fuwari.vercel.app不过被我加了许多功能",
 	links: [
 		{
-			name: "Mymail",
-			icon: "ic:sharp-email",
-			url: "mailto:nathanlee2013@icloud.com",
+			name: "Bilibli",
+			icon: "fa6-brands:bilibili",
+			url: "https://space.bilibili.com/1857798048",
+		},
+		{
+			name: "GitHub",
+			icon: "fa6-brands:github",
+			url: "https://github.com/sljfcnjdfh",
 		},
 	],
 };
