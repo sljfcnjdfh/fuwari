@@ -12,7 +12,7 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
 	title: "Lishuai Blog",
 	description:
-		"分享网络技术、服务器部署、内网穿透、静态网站搭建、CDN优化、容器化部署等技术教程与实践经验的个人技术博客，专注于云原生、无服务器架构和前后端开发，作者为李帅站长",
+		"分享网络技术、服务器部署、软件秒破解、容器化部署、薅羊毛、大厂活动等技术教程与实践经验。具有创造性又符合伦理的个人技术博客，专注于云原生、无服务器架构、Python，作者为李帅站长",
 
 	keywords: [],
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
