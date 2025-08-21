@@ -73,7 +73,12 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "数据统计",
-			url: "https://eu.umami.is/share/tWMMUocQfILzEeg4/fx.jianyuan.eu.org", // Internal links should not include the base path, as it is automatically added
+			url: "https://umami.jianyuan.eu.org/share/f66BeyREQYYAVM5b/fx.jianyuan.eu.org", // Internal links should not include the base path, as it is automatically added
+			external: true, // Show an external link icon and will open in a new tab
+		},
+		{
+			name: "服务监控",
+			url: "http://120.46.159.200:3001/status/online", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
@@ -85,14 +90,9 @@ export const profileConfig: ProfileConfig = {
 	bio: "白崇义我的魔改博客不开源哦，它本身长这样的https://fuwari.vercel.app不过被我加了许多功能",
 	links: [
 		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/1857798048",
-		},
-		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/sljfcnjdfh",
+			name: "Mymail",
+			icon: "ai:ic:sharp-email",
+			url: "mailto:nathanlee2013@icloud.com",
 		},
 	],
 };
@@ -111,8 +111,8 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 
 export const umamiConfig: UmamiConfig = {
 	enable: true,
-	baseUrl: "https://eu.umami.is",
-	shareId: "tWMMUocQfILzEeg4",
+	baseUrl: "https://umami.jianyuan.eu.org",
+	shareId: "f66BeyREQYYAVM5b",
 	timezone: "Asia/Shanghai",
 	
 };
