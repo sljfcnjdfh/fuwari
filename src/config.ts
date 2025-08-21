@@ -99,6 +99,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:github",
 			url: "https://github.com/sljfcnjdfh",
 		},
+		{
+			name: "Email",
+			icon: "fa6-brands:github",
+			url: "mailto:nathanlee2013@icloud.com",
+		},
 	],
 };
 
