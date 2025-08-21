@@ -91,7 +91,7 @@ export const profileConfig: ProfileConfig = {
 	links: [
 		{
 			name: "Mymail",
-			icon: "ai:ic:sharp-email",
+			icon: "ic:sharp-email",
 			url: "mailto:nathanlee2013@icloud.com",
 		},
 	],
