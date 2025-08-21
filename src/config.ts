@@ -101,7 +101,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "Email",
-			icon: "fa6-brands:github",
+			icon: "ic:sharp-email",
 			url: "mailto:nathanlee2013@icloud.com",
 		},
 	],
