@@ -1,6 +1,6 @@
 ---
 title: "加群向导"
-image: https://eo-picsv.jianyuan.eu.org/h
+image: https://eo-picsv.jianyuan.eu.org/?img=ua
 published: 2025-08-15
 pinned: true
 category: '置顶'
