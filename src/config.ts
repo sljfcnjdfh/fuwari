@@ -67,8 +67,8 @@ export const navBarConfig: NavBarConfig = {
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
-			name: "短信轰炸",
-			url: "https://taiyanglee.eu.org/pct/zpzs/zpzs/20/index.html", // Internal links should not include the base path, as it is automatically added
+			name: "91域名邮箱",
+			url: "https://91vip.me/", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
