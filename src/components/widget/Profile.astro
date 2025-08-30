@@ -7,6 +7,12 @@ import ImageWrapper from "../misc/ImageWrapper.astro";
 const config = profileConfig;
 ---
 <div class="card-base p-3">
+    <div class="text-center text-sm text-neutral-500 dark:text-neutral-400 border-neutral-100 dark:border-neutral-700">一言 / hitokoto</div>
+    <div class="text-center text-sm text-neutral-500 dark:text-neutral-400 border-neutral-100 dark:border-neutral-700">
+    <p id="hitokoto">正在加载一言...</p>
+    </div>
+    <div class="text-center text-sm text-neutral-500 dark:text-neutral-400 mt-3 pt-3 border-t border-neutral-200 dark:border-neutral-700">
+    </div>
     <a aria-label="Go to About Page" href={url('/about/')}
        class="group block relative mx-auto mt-1 lg:mx-0 lg:mt-0 mb-3
        max-w-[12rem] lg:max-w-none overflow-hidden rounded-xl active:scale-95">
@@ -21,19 +27,21 @@ const config = profileConfig;
     <div class="px-2">
         <div class="font-bold text-xl text-center mb-1 dark:text-neutral-50 transition">{config.name}</div>
         <div class="h-1 w-5 bg-[var(--primary)] mx-auto rounded-full mb-2 transition"></div>
+        
+        <!-- bio: 名言部分 -->
+        <!-- 
+        
+        { isSunday &&
+        <div class="text-center text-neutral-400 mb-2.5 transition">调整你的步伐，跟着节拍摇摆，举起双手拥抱你想成为的人</div>
+        }
+
+        
+        { !isSunday &&
         <div class="text-center text-neutral-400 mb-2.5 transition">{config.bio}</div>
-        <div class="flex gap-2 justify-center mb-1">
-            {config.links.length > 1 && config.links.map(item =>
-                    <a rel="me" aria-label={item.name} href={item.url} target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
-                        <Icon name={item.icon} class="text-[1.5rem]"></Icon>
-                    </a>
-            )}
-            {config.links.length == 1 && <a rel="me" aria-label={config.links[0].name} href={config.links[0].url} target="_blank"
-                                            class="btn-regular rounded-lg h-10 gap-2 px-3 font-bold active:scale-95">
-                <Icon name={config.links[0].icon} class="text-[1.5rem]"></Icon>
-                {config.links[0].name}
-            </a>}
-        </div>
+        }
+        -->
+
+        <div class="text-center text-neutral-400 mb-2.5 transition" id="bio"></div>
         
         <!-- 全站访问量统计 -->
         <div class="text-center text-sm text-neutral-500 dark:text-neutral-400 mt-3 pt-3 border-t border-neutral-200 dark:border-neutral-700">
@@ -44,7 +52,36 @@ const config = profileConfig;
         </div>
     </div>
 </div>
-
+<!-- 名言 -->
+<script>
+    const bio = document.getElementById("bio");
+    if (bio){
+        const isSunday = new Date().getDay() === 0;
+        if (isSunday){
+            bio.textContent = "调整你的步伐，跟着节拍摇摆，举起双手拥抱你想成为的人"
+        }
+        else{
+            bio.textContent = "永远相信美好的事情即将发生";
+        }
+    }
+</script>
+<script>
+// 调用一言 API
+//fetch("https://international.v1.hitokoto.cn")
+// 试试国内，不过容易崩
+fetch("https://v1.hitokoto.cn")
+  .then(response => response.json())
+  .then(data => {
+    // API 返回的字段是 data.text
+    document.getElementById("hitokoto").innerText = data.hitokoto;
+  })
+  .catch(error => {
+    console.error("获取一言失败：", error);
+    //document.getElementById("hitokoto").innerText = "获取失败，请稍后再试。";
+    //失败后用内置的，成功了用别人的。
+    document.getElementById("hitokoto").innerText = "再热情的心也经不起冷漠，再爱你的人也经不起冷落。";
+  });
+</script>
 <script define:vars={{ umamiConfig }}>
     // 获取全站访问量统计
     async function loadSiteStats() {
