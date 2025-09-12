@@ -66,19 +66,16 @@ const config = profileConfig;
     }
 </script>
 <script>
-// 调用一言 API
-//fetch("https://international.v1.hitokoto.cn")
-// 试试国内，不过容易崩
-fetch("https://v1.hitokoto.cn")
+// 调用一言 API，那个hitokoto接口封锁了
+fetch("https://api.nxvav.cn/api/yiyan/?encode=json&charset=utf-8")
   .then(response => response.json())
   .then(data => {
-    // API 返回的字段是 data.text
-    document.getElementById("hitokoto").innerText = data.hitokoto;
+    // API 返回的字段是 data.yiyan
+    document.getElementById("hitokoto").innerText = data.yiyan;
   })
   .catch(error => {
     console.error("获取一言失败：", error);
-    //document.getElementById("hitokoto").innerText = "获取失败，请稍后再试。";
-    //失败后用内置的，成功了用别人的。
+    // 失败后使用内置文案
     document.getElementById("hitokoto").innerText = "再热情的心也经不起冷漠，再爱你的人也经不起冷落。";
   });
 </script>
